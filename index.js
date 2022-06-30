@@ -39,7 +39,7 @@ const checkDevice = function () {
   }
 
   if (device === "mobile")
-    dewice.innerHTML = `you   can access this site on mobile`;
+    Console.log(`you   can access this site on mobile`);
 };
 checkDevice();
 window.addEventListener('deviceorientation', function(e) {
