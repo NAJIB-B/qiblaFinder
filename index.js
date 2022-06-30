@@ -39,6 +39,9 @@ const checkDevice = function () {
   }
 
   if (device === "mobile")
-    dewice.innerHTML = `you  are can access this site on mobile`;
+    dewice.innerHTML = `you   can access this site on mobile`;
 };
 checkDevice();
+window.addEventListener('deviceorientation', function(e) {
+   dewice.innerHTML = e.webkitCompassHeading;
+}, false);
